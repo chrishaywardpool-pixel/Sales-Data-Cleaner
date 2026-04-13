@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import sys
 from pathlib import Path
-sys.path.append(r'c:\Users\cnanfra\Downloads')
+sys.path.append(str(Path(__file__).parent))
 from cleaning import clean_data
 from column_detection import detect_columns, get_user_column_mapping
 from sku_matching import load_sku_list, filter_by_sku
